@@ -1,0 +1,15 @@
+body {
+  background-image: url("3.jpg");
+   text-align: center;
+   background-position: top;
+   background-size: 900px;
+   
+   
+   
+  }
+ 
+.heading {
+   
+    margin-top: 200px;
+    font-size: 50px;
+}
