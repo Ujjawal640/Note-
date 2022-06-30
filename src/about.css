@@ -1,10 +1,24 @@
 
- .about{
+ .login{
    text-align: center;
-   margin-top: 200px;
+   font-size: 30px;
+   margin-left: 200px;
+   margin-right: 200px;
+ 
+
    
   
  }
- p{
-   font-size: 30px;
- }
+ html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  background-image:linear-gradient(to right, rgb(168, 192, 255), rgb(63, 43, 150));
+
+}

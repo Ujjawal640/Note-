@@ -1,32 +1,31 @@
+import './App.css'
 
-import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 
 } from "react-router-dom";
-import Navbar from './components/Navbar';
-import {Home} from './components/Home';
+
 
 import NoteState from './context/notes/NoteState';
 import Login from './components/Login';
 import Singup from './components/Singup';
 import {Addinganote} from './components/Addinganote';
-import   './home.css'
+
 
 
 function App() {
   return (
-    <>
+    <div >
     <NoteState>
       <Router>
-        <Navbar />
+        
     
-        <div className="container">
+        <div >
           <Switch>
             <Route exact path="/">
-              <Home/>
+            <Login/>
             </Route>
          
             <Route exact path="/Addinganote">
@@ -44,7 +43,7 @@ function App() {
         </div>
       </Router>
     </NoteState>
-  </>
+  </div>
   );
 }
 

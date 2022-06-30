@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import { useHistory } from 'react-router-dom'
+import '../about.css'
+import Navbar from './Navbar';
 
 
 const Login = (props) => {
@@ -33,10 +35,12 @@ const Login = (props) => {
     }
 
     return (
-        <div>
+        <><Navbar />
+        <div className="login  my-5">
+         
             <form  onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Email address</label>
+                    <label htmlFor="email" className="form-label" >Email address</label>
                     <input type="email" className="form-control" value={credentials.email} onChange={onChange} id="email" name="email" aria-describedby="emailHelp" />
                     
                 </div>
@@ -48,6 +52,7 @@ const Login = (props) => {
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
+        </>
     )
 }
 

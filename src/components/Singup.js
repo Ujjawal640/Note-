@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 import { useHistory } from 'react-router-dom'
+import Navbar from './Navbar';
 
 const Singup = () => {
     const [credentials, setCredentials] = useState({name:"",email: "", password: "",cpassword:""}) 
@@ -34,6 +35,8 @@ const Singup = () => {
     }
   return (
     <>
+    <Navbar />
+    <div className="container my-5">
     <form onSubmit={handleSubmit}>
     <div className="mb-3">
     <label htmlFor="name" className="form-label">Name</label>
@@ -55,6 +58,7 @@ const Singup = () => {
  
   <button type="submit" className="btn btn-primary">Submit</button>
 </form>
+</div>
 </>
   )
 }
